@@ -92,7 +92,7 @@ for (let i = 0; i < lines.length; i++) {
         if (parts[j].includes('REF:')) {
           AirlineCode.pop()
           AirlineCode = AirlineCode.join(' ')
-          data['AirlineCode:'] = AirlineCode
+          data['Airline_Code:'] = AirlineCode
           data['REF:'] = line.replace(AirlineCode, '').replace('REF:', '').trim()
           isAirlineCode = false
           foundAirlineInformation = true
